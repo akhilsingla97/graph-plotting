@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script src="https://d3js.org/d3.v3.js"></script>
+
+<script src="jsnetworkx.js"></script>
+<div id="canvas" class="span9"></div>
+<script>
+//var d3 = required('d3');
+//var jsnx = required('jsnetworkx');
+var G = new jsnx.Graph();
+G.addNodesFrom([
+    [1, {color: 'red'}],
+    [2, {color: 'green'}],
+    [3, {color: 'white'}]
+]);
+ 
+G.addEdgesFrom([[1,2], [1,3]]);
+ 
+// `jsnx.draw` accept a graph and configuration object
+jsnx.draw(G, {
+  element: '#canvas',
+  withLabels: true,
+  nodeStyle: {
+      fill: function(d) {
+          return d.data.color;
+      }
+  }
+});
+
+</script>
+

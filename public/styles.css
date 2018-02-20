@@ -1,0 +1,21 @@
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+#sidebar {
+height : 100%;
+width : 160px;
+padding-left : 10px;
+position : fixed;
+z-index : 1;
+}
+
+#chart{
+margin-left : 160px;
+}
