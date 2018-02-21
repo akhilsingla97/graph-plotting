@@ -16,6 +16,7 @@
 	
 	"links":[
 			{"source":1,"target":2,"value":10},
+			{"source":1,"target":2,"value":8},
 			{"source":2,"target":3,"value":7},
 			{"source":2,"target":4,"value":3},
 			{"source":2,"target":6,"value":6},

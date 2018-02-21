@@ -23,6 +23,25 @@
 
     <div id="chart">
 		<svg width="960" height="600"></svg>
+		<div id = "rightbar">
+				<div id = "grouping">
+					Select grouping criteria
+					<p align = "center"><select onchange = "draw(0,this.options[this.selectedIndex].value)">
+						<option value = 1>Manager</option>
+						<option value = 2>Meetings</option>			
+					</select></p>
+					<p>
+					<form name="myform">
+						<input type = "checkbox" id = "singlesource" onchange="draw(0,1)">
+					</form>
+					</p>
+				</div>
+				<div>
+					<select>
+						<option></option>
+					</select>
+				</div>	
+			</div>
 	</div>
   
 
@@ -30,7 +49,7 @@
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-<script src = "graph1.js">
+<script src = "graph2.js">
 
 
 </script>

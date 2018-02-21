@@ -18,4 +18,19 @@ z-index : 1;
 
 #chart{
 margin-left : 160px;
+width : 960px;
 }
+
+#rightbar{
+  margin-left: 960px;
+  margin-top: 50px;
+  position: absolute;
+  background-color: aquamarine;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#grouping{
+  align-items: center;
+}
+
